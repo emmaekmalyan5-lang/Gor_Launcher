@@ -1,0 +1,80 @@
+/* Основной фон окна */
+QMainWindow {
+    background-color: #050505;
+}
+
+/* Общий стиль всех виджетов */
+QWidget {
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Карточки игр и истории */
+QFrame#GameCard, QFrame#HistoryCard {
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+
+QFrame#GameCard:hover {
+    border: 2px solid #00f2ff; /* Неоновый голубой при наведении */
+    background-color: #1a1a1a;
+}
+
+/* Кнопки */
+QPushButton {
+    background-color: #1a1a1a;
+    border: 1px solid #00f2ff;
+    border-radius: 8px;
+    color: #00f2ff;
+    font-weight: bold;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #00f2ff;
+    color: #000;
+}
+
+/* Вкладки (Tabs) */
+QTabWidget::pane {
+    border-top: 2px solid #00f2ff;
+    background: #0a0a0a;
+}
+
+QTabBar::tab {
+    background: #1a1a1a;
+    color: #888;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+QTabBar::tab:selected {
+    background: #00f2ff;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Поиск */
+QLineEdit {
+    background-color: #0f0f0f;
+    border: 1px solid #00f2ff;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: white;
+}
+
+/* Скроллбар */
+QScrollBar:vertical {
+    background: #0a0a0a;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #333;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #00f2ff;
+}
